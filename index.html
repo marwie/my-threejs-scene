@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 🌵 Made with Needle — https://needle.tools -->
+<head>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://marwie.github.io/my-threejs-scene/include/Scrollytelling.jpg">
+  <meta name="og:image" content="https://marwie.github.io/my-threejs-scene/include/Scrollytelling.jpg">
+  <meta name="og:image:width" content=1080>
+  <meta name="og:image:height" content=1080>
+  <meta name="og:title" content="Product Scrollytelling">
+  <meta name="description" content="Lnyx R1 scrolling website">
+  <meta name="og:description" content="Lnyx R1 scrolling website">
+  <meta name="generator" content="Unity 2021.3.28f1, Needle Engine Integration @3.11.3-pre">
+  <meta name="needle-engine" content="3.11.3-beta">
+
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/favicon-8d99ceea.ico">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <title>Product Scrollytelling</title>
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  
+
+  <meta property="twitter:image" content="" />
+  <meta property="og:image" content="" />
+
+  <meta name="robots" content="index,follow">
+  <meta name="url" content="https://marwie.github.io/my-threejs-scene">
+
+  
+  
+  <script type="module" crossorigin src="./assets/index-f2143259.js"></script>
+  <link rel="stylesheet" href="./assets/index-a5d374aa.css">
+</head>
+
+<body>
+  <script>/* needle: injected fix for peerjs */
+window.global = window;
+var parcelRequire;</script>
+
+  <script>
+    // hack for simple-peer
+    window.global = window;
+    var parcelRequire;
+  </script>
+  
+  
+
+  <needle-engine>
+    <!--<div class="ar scroller"><p>Test</p></div>-->
+  </needle-engine>
+
+  <div id="sections">
+
+    <div class="section">
+      
+      <div class="sticky-section">
+        <h2>Lynx R1</h2>
+        <p>
+          One device, endless possibilities.
+        </p>
+        <p>
+          <a href="https://www.lynx-r.com/" target="_blank">Learn More</a>
+        </p>
+        <p>
+          <a href="https://needle.tools" target="_blank">Made with Needle</a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="sticky-section">
+        <h2>The Future of Mixed Reality</h2>
+        <p>
+           Mixed-Reality for Professionals & Consumers.
+        </p>
+      </div>
+    </div>
+    
+    <div class="section double">
+      <div class="sticky-section">
+        <h2>Unique Lens Design</h2>
+        <p>
+          Standalone AR and VR
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sticky-section">
+        <h2>Lynx R-1</h2>
+        <p>
+          One device, endless possibilities.
+        </p>
+        <p>
+          <a href="https://www.lynx-r.com/" target="_blank">Learn More</a>
+        </p>
+        <p>
+          <a href="https://needle.tools" target="_blank">Made with Needle</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="section" style="height: 500px;"></div>
+  </div>
+
+  <script>
+    // create an IntersectionObserver and watch changes to elements with the class "sticky-section"
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        } else {
+          entry.target.classList.remove('is-visible');
+        }
+      });
+    }, { threshold: 0.9, rootMargin: '0px 0px -70% 0px' });
+    
+    // observe sections
+    document.querySelectorAll('.sticky-section').forEach((section) => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
